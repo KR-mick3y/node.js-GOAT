@@ -1,0 +1,6 @@
+id,name,department,access_level
+1,Alice,Engineering,standard
+2,Bob,Marketing,standard
+3,Carol,Security,admin
+4,Dave,HR,standard
+5,Eve,Finance,standard

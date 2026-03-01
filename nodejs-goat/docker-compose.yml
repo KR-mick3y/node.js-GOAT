@@ -1,0 +1,25 @@
+services:
+  prototype-pollution:
+    build: ./01-prototype-pollution
+    ports: ["4001:4001"]
+    restart: unless-stopped
+  command-injection:
+    build: ./02-command-injection
+    ports: ["4002:4002"]
+    restart: unless-stopped
+  path-traversal:
+    build: ./03-path-traversal
+    ports: ["4003:4003"]
+    restart: unless-stopped
+  ssti:
+    build: ./04-ssti
+    ports: ["4004:4004"]
+    restart: unless-stopped
+  ssrf:
+    build: ./05-ssrf
+    ports: ["4005:4005"]
+    restart: unless-stopped
+  admin-privesc:
+    build: ./06-admin-privesc
+    ports: ["4007:4007"]
+    restart: unless-stopped
